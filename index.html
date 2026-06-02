@@ -1,14 +1,151 @@
-<!-- FAMILY -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="card">
-    <img src="family.png" alt="Frio-Ondas Family">
+<title>Frio-Ondas</title>
 
-    <h3>Frio-Ondas Family</h3>
+<style>
 
-    <div class="specs">
-        <p>• 8 placas Peltier</p>
-        <p>• Sistema inteligente de circulação</p>
-        <p>• Capacidade para pratos e bebidas</p>
-        <p>• Resfriamento em até 70% do tempo de uma geladeira</p>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a1225;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+/* PRIMEIRA TELA */
+
+.inicio{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.inicio h1{
+    font-size:90px;
+    color:#4da6ff;
+}
+
+.inicio p{
+    font-size:28px;
+    margin-top:15px;
+}
+
+/* SEGUNDA TELA */
+
+.versoes{
+    min-height:100vh;
+    padding:80px 20px;
+}
+
+.versoes h2{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:50px;
+    color:#4da6ff;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:#15213f;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 0 15px rgba(77,166,255,0.2);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card h3{
+    text-align:center;
+    margin-top:15px;
+    color:#4da6ff;
+}
+
+.specs{
+    margin-top:10px;
+    font-size:12px;
+    color:#d7e8ff;
+    line-height:1.6;
+}
+
+.specs p{
+    margin:2px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="inicio">
+    <h1>FRIO-ONDAS</h1>
+    <p>Nova tecnologia — O frio na velocidade do futuro</p>
+</section>
+
+<section class="versoes">
+
+    <h2>Nossas Versões</h2>
+
+    <div class="cards">
+
+        <!-- MINI -->
+
+        <div class="card">
+            <img src="mini.png" alt="Frio-Ondas Mini">
+
+            <h3>Frio-Ondas Mini</h3>
+
+            <div class="specs">
+                <p>• 2 placas Peltier</p>
+                <p>• 2 ventoinhas</p>
+                <p>• Capacidade: 1 lata ou garrafa</p>
+                <p>• Resfria uma lata em 2 a 4 minutos</p>
+            </div>
+        </div>
+
+        <!-- FAMILY -->
+
+        <div class="card">
+            <img src="family.png" alt="Frio-Ondas Family">
+
+            <h3>Frio-Ondas Family</h3>
+        </div>
+
+        <!-- PRO -->
+
+        <div class="card">
+            <img src="pro.png" alt="Frio-Ondas Pro X">
+
+            <h3>Frio-Ondas Pro X</h3>
+        </div>
+
     </div>
-</div>
+
+</section>
+
+</body>
+</html>
